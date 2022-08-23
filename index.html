@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<!-- inForm us About You
+   Desc: Create a webpage(s) that introduces yourself, with a bio and
+   utilizing a form with 5 different form elements. A navigation is 
+   needed between the two. Will also need to discuss what the 
+   difference between the three different button creations. 
+   Author: Chauntel Atchley Cully
+   Date: 02/20/2022 -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>inForm us About You</title>
+</head>
+
+<body style="font-family: 'Edu SA Beginner', cursive;">
+    <div class="container-fluid" style="background-color:var(--dark-blue); padding-bottom: 8rem;">
+        <header style="flex-wrap: active;" id="header">
+            <ul class="nav justify-content-center nav-pills" style="padding-top:20px; font-size:1.2rem;">
+                <img src="images/icon.png" alt="wave1" class="wavesize">
+                <li class="nav-item" style="float: right;">
+                    <a class="nav-link" href="#header">CMAC</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="#header">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#form">Form</a>
+                </li>
+                <img src="images/icon2.png" alt="wave2" class="wavesize">
+            </ul>
+        </header>
+        <div class="container block">
+            <div class="row align-items-start">
+                <div class="col">
+                    <img src="images/profile2.jpg" class="round" alt="husbandandmyself">
+                </div>
+                <div class="col" style="margin-top: 3.5rem;">
+                    <h2 class="about" style="color: var(--white-blue)">What you should know about me.</h2>
+                    <p style="font-size: 1.7rem; color: var(--white-blue);">Hello, my name is Chauntel.
+                        I am happily married, we have four cats that are spoiled and
+                        I've been creating art since the age of 12 and painting since 26.
+                        Video games have always been my go-to and now can only play when time is
+                        available. My passion is to start designing and publishing websites, as well as set my own
+                        hours! </p>
+                </div>
+            </div>
+        </div>
+        <div class="flexrow-form block">
+            <form method="get" action="aboutmesubmit.html">
+                <div class="flexclmn-form" id="form">
+                    <h2 class="about" style="font-size: 3.2rem;">Hobbies & Such</h2><br>
+                    <fieldset>
+                        <label for="birthday">Birthday:
+                            <input type="month" id="birthday" name="birthday" required>
+                        </label><span class="tab"></span>
+                        <label for="favcolor">Favorite color:
+                            <input type="color" id="favcolor" name="favcolor" required>
+                        </label><br><br>
+                        <label for="hobbies" required>Top 3 Hobbies<br>
+                            <input type="checkbox" id="hobby1" name="hobby1" value="Swimming" required>
+                            <label for="hobbies"> Swimming</label><span class="tab"></span>
+                            <input type="checkbox" id="hobby2" name="hobby2" value="Painting">
+                            <label for="hobbies"> Painting</label><span class="tab"></span>
+                            <input type="checkbox" id="hobby3" name="hobby3" value="Lounging">
+                            <label for="hobbies"> Lounging</label><br>
+                            <input type="checkbox" id="hobby4" name="hobby4" value="Gaming">
+                            <label for="hobbies"> Gaming</label><span class="tab"></span>
+                            <input type="checkbox" id="hobby5" name="hobby5" value="Car">
+                            <label for="hobbies"> Working Out</label><span class="tab"></span>
+                            <input type="checkbox" id="hobby6" name="hobby6" value="Boat">
+                            <label for="hobbies"> Cooking</label>
+                        </label>
+                        <br><br>
+                        <label for="paintings" required>Favorite Painting<br>
+                            <input type="radio" id="img1" name="img1" value="Lanscape Mokes">
+                            <img src="images/img1.jpg" alt="img1" style="max-block-size: 325px;"><span
+                                class="tab"></span>
+                            <input type="radio" id="img2" name="img2" value="Watery Mokes">
+                            <img src="images/img2.jpg" alt="img2" style="max-block-size: 325px;"><br>
+                            <input type="radio" id="img3" name="img3" value="Zenitsu">
+                            <img src="images/img3.jpg" alt="img3" style="max-block-size: 325px;"><span
+                                class="tab"></span>
+                            <input type="radio" id="img4" name="img4" value="Howel's Moving Castle Lanscape">
+                            <img src="images/img4.jpg" alt="img4" style="max-block-size: 325px;"><br>
+                            <input type="radio" id="img5" name="img5" value="Kyojuro">
+                            <img src="images/img5.jpg" alt="img5" style="max-block-size: 325px;"><span
+                                class="tab"></span>
+                            <input type="radio" id="img6" name="img6" value="Cuphead">
+                            <img src="images/img6.jpg" alt="img6" style="max-block-size: 325px;">
+                        </label><br><br>
+                        <label for="wouldyouhire">Would you hire?
+                            <select name="question" id="question" required>
+                                <option value="">Please Select One</option>
+                                <option value="absolutely">Absolutely!</option>
+                                <option value="unfortunatelynot">Unfortunately Not</option>
+                            </select>
+                        </label><br><br>
+                        <input class="submit" type="submit" value="SUBMIT" ; />
+                    </fieldset>
+                </div>
+                <!-- Was for Javascript
+                <div id='subDiv'> 
+                    Onlick Button to using the values of the three form fields and concatenating 
+                    them to display with using the script
+                    <button type="button"
+                        onclick="document.getElementById('subDiv').innerHTML = '</br>' + birthday.value + '<hr></br>' + favcolor.value + '<hr></br>' + hobbies.value + '<hr>'"
+                        class="btn btn-info">SUBMIT</button>
+                    <script>
+                        var birthday = document.getElementById('birthday');
+                        var favcolor = document.getElementById('favcolor');
+                        var hobbies = document.getElementById('hobbies');
+                    </script>
+                </div> -->
+            </form>
+        </div>
+        <footer style="flex-wrap: active;" id="header">
+            <ul class="nav justify-content-center nav-pills" style="padding-top:8rem; font-size:1.2rem;">
+                <img src="images/icon.png" alt="wave1" class="wavesize">
+                <li class="nav-item" style="float: right;">
+                    <a class="nav-link" href="#header">CMAC</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="#header">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#form">Form</a>
+                </li>
+                <img src="images/icon2.png" alt="wave2" class="wavesize">
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<!-- button	Just a button. Its effects must be controlled by something else, such as JavaScript
+     submit	The button is a submit button (submits form-data) 
+     The difference is that <button> can have content, whereas <input> cannot (it is a null element).-->
