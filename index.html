@@ -61,13 +61,17 @@
             <form method="get" action="aboutmesubmit.html">
                 <div class="flexclmn-form" id="form">
                     <h2 class="about" style="font-size: 3.2rem;">Hobbies & Such</h2><br>
-                    <fieldset>
+                    <fieldset class="border">
                         <label for="birthday">Birthday:
                             <input type="month" id="birthday" name="birthday" required>
                         </label><span class="tab"></span>
+
                         <label for="favcolor">Favorite color:
                             <input type="color" id="favcolor" name="favcolor" required>
-                        </label><br><br>
+                        </label>
+                    </fieldset>
+                    <br><br>
+                    <fieldset class="border">
                         <label for="hobbies" required>Top 3 Hobbies<br>
                             <input type="checkbox" id="hobby1" name="hobby1" value="Swimming" required>
                             <label for="hobbies"> Swimming</label><span class="tab"></span>
@@ -82,7 +86,9 @@
                             <input type="checkbox" id="hobby6" name="hobby6" value="Boat">
                             <label for="hobbies"> Cooking</label>
                         </label>
-                        <br><br>
+                    </fieldset>
+                    <br><br>
+                    <fieldset class="border">
                         <label for="paintings" required>Favorite Painting<br>
                             <input type="radio" id="img1" name="img1" value="Lanscape Mokes">
                             <img src="images/img1.jpg" alt="img1" style="max-block-size: 325px;"><span
@@ -99,16 +105,20 @@
                                 class="tab"></span>
                             <input type="radio" id="img6" name="img6" value="Cuphead">
                             <img src="images/img6.jpg" alt="img6" style="max-block-size: 325px;">
-                        </label><br><br>
+                        </label>
+                    </fieldset>
+                    <br><br>
+                    <fieldset class="border">
                         <label for="wouldyouhire">Would you hire?
                             <select name="question" id="question" required>
                                 <option value="">Please Select One</option>
                                 <option value="absolutely">Absolutely!</option>
                                 <option value="unfortunatelynot">Unfortunately Not</option>
                             </select>
-                        </label><br><br>
-                        <input class="submit" type="submit" value="SUBMIT" ; />
+                        </label>
                     </fieldset>
+                    <br><br>
+                    <input class="submit" type="submit" value="SUBMIT" ; />
                 </div>
                 <!-- Was for Javascript
                 <div id='subDiv'> 
